@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Web - My Project</title>
+
+        <script
+            src="https://kit.fontawesome.com/269bb48490.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img
+                src="./assets/images/logo.png"
+                alt="my-logo"
+                class="navbar-logo"
+            />
+
+            <ul class="navbar-list">
+                <li class="navbar-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="myproject.html">My Project</a>
+                </li>
+            </ul>
+            <a href="https://t.me/aditiyaramadhanip" class="navbar-button-link">
+                <button class="navbar-button">Contact Me</button>
+            </a>
+        </nav>
+
+        <div class="form-box">
+            <form class="form">
+                <h1 class="heading-2">add my project</h1>
+                <div class="form-input">
+                    <label for="name" class="form-label">Project Name</label>
+                    <input
+                        type="text"
+                        class="form-inputed form-inputed-projectname"
+                        name="name"
+                    />
+                </div>
+                <div class="form-content">
+                    <div class="form-left-content">
+                        <div class="form-input">
+                            <label for="start-date" class="form-label"
+                                >Start Date</label
+                            >
+                            <input
+                                type="date"
+                                class="form-inputed form-inputed-start-date"
+                                name="start-date"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-right-content">
+                        <div class="form-input">
+                            <label for="end-date" class="form-label"
+                                >End Date</label
+                            >
+                            <input
+                                type="date"
+                                class="form-inputed form-inputed-end-date"
+                                name="end-date"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="description" class="form-label"
+                        >Description</label
+                    >
+                    <textarea
+                        class="form-inputed form-inputed-description"
+                        name="description"
+                    ></textarea>
+                </div>
+                <div class="form-input">
+                    <span style="display: block">Technologies</span>
+                    <div class="form-checkbox-wrapper">
+                        <div class="form-checkbox-wrapper-left">
+                            <input
+                                type="checkbox"
+                                class="form-inputed-checkbox-1"
+                                name="nodejs"
+                            />
+                            <label for="nodejs" class="form-checkbox"
+                                >Node Js</label
+                            >
+                            <input
+                                type="checkbox"
+                                class="form-inputed-checkbox-2"
+                                name="reactjs"
+                            />
+                            <label for="reactjs" class="form-checkbox"
+                                >React Js</label
+                            >
+                        </div>
+
+                        <div class="form-checkbox-wrapper-right">
+                            <input
+                                type="checkbox"
+                                class="form-inputed-checkbox-3"
+                                name="nextjs"
+                            />
+                            <label for="nextjs" class="form-checkbox"
+                                >Next Js</label
+                            >
+                            <input
+                                type="checkbox"
+                                class="form-inputed-checkbox-4"
+                                name="typescript"
+                            />
+                            <label for="typescript" class="form-checkbox"
+                                >Typescript</label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="form-upload">
+                    <label for="upload" class="form-upload">Upload Image</label>
+                </div>
+                <div class="form-choose-file">
+                    <input
+                        type="file"
+                        class="form-inputed form-inputed-choose-file"
+                        name="form-choose-file"
+                    />
+                </div>
+                <button onclick="addproject()" type="button" class="btn-submit-my-project">submit</button>
+            </form>
+        </div>
+
+        <hr class="line" />
+       <div class="form-my-project">
+        <h1 class="heading-3">My Project</h1> 
+            
+        <div id="contents" class="form-my-project">
+   
+          <div class="project-item">
+            <div class="my-project-img">
+               <img src="./assets/images/myproject.png" alt="cover">
+            </div>
+          <div class="detail-project">
+          <h3>
+            <a href="detailproject.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h3>
+          <div class="detail-project-content">
+            Duration : 4 month
+          </div>
+          <p class="myproject-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam minima in culpa itaque deleniti unde
+             quae aperiam ex architecto, blanditiis eveniet.
+          </p>
+           <div class="card-box">
+               <div class="card-wrapper">
+                        <img src="./assets/images/nodejs.png" alt="ns" id="nss"/>
+               </div>
+                <div class="card-wrapper">
+                        <img src="./assets/images/nextjs.png" alt="nt" id="nts"/>
+                </div>
+                <div class="card-wrapper">
+                        <img src="./assets/images/React-js.png" alt="rs" id="rss"/>
+                </div>
+                <div class="card-wrapper">
+                        <img src="./assets/images/typescript.png" alt="ts" id="tss"/>
+                </div>     
+           </div>             
+            <div class="btn-group">
+              <button class="btn-edit">edit</button>
+              <button class="btn-delete">delete</button>
+             </div> 
+          </div>     
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="project.js"></script>
+    </body>
+</html>

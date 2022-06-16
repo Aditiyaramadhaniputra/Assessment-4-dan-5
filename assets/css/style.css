@@ -59,7 +59,7 @@ body {
     background-color: #000;
     border-radius: 5px;
     padding: 1rem 2rem;
-    transition: all .3s;
+    transition: all 0.3s;
     cursor: pointer;
 }
 
@@ -91,7 +91,6 @@ body {
     background-color: #fff;
     padding: 4rem;
     margin: 4rem 0;
-    
 }
 
 .biodata-text {
@@ -107,11 +106,9 @@ body {
     border-radius: 5px;
     padding: 1rem 2rem;
     margin: 2rem 0;
-    transition: all .3s;
+    transition: all 0.3s;
     cursor: pointer;
 }
-
-
 
 .biodata-btn-link:link {
     text-decoration: none;
@@ -146,7 +143,6 @@ body {
 .biodata-media-link:not(:last-child) {
     margin-right: 2rem;
 }
-
 
 .biodata-card-box {
     display: flex;
@@ -220,24 +216,286 @@ body {
     border-bottom: 2px solid green;
 }
 
-.form-btn {
+.form-inputed-message {
+    height: 10rem;
+}
+
+.form-link {
     display: block;
-    border: none;
+    text-decoration: none;
     width: 12rem;
     color: #fff;
     background-color: #000;
     border-radius: 5px;
-    margin: auto;
+    text-align: center;
     padding: 1rem 2rem;
-    margin-top: 2rem;
-    transition: all .3s;
+    margin: 2rem auto 0;
+    transition: all 0.3s;
     cursor: pointer;
 }
 
-.form-btn:hover {
+.form-link:hover {
     color: #000;
     background-color: #fff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+/* ========= add Project ========= */
+.form-content {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+.form-left-content {
+    flex: 50%;
+    margin-right: 3rem;
+}
+
+.form-right-content {
+    flex: 50%;
+}
+
+.form-inputed-description {
+    height: 10rem;
+}
+
+.form-checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
+.form-checkbox-wrapper-left {
+    margin-bottom: 1rem;
+}
+
+.form-checkbox:not(:last-of-type) {
+    margin-right: 6rem;
+}
+
+.form-choose-file {
+    flex: 50%;
+    display: block;
+    align-items: center;
+    justify-content: flex;
+    background-color: rgb(255, 255, 255);
+    border: 5px grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-choose:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+/* ==== My Project */
+
+/*  .form-my-project {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+} */
+
+.conteiner-form-my-project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 30%;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border: 2rem solid #eee;
+    border-radius: 1rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.my-project-img img {
+    display: block;
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.detail-project h3 {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+}
+
+.detail-project {
+    margin-top: 10px;
+}
+
+.detail-project-content {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin-top: 0px;
+}
+
+.detail-project {
+    overflow: hidden;
+}
+
+.detail-project:last-child,
+.detail-project:hover {
+    overflow: visible;
+}
+
+.myproject-text {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.btn-submit-my-project {
+    background-color: #313131;
+    color: white;
+    padding: 5px 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
+.btn-submit-my-project:hover {
+    background-color: #000000;
+}
+
+.card-box {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.card-wrapper img {
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+.card-box div {
+    margin: 5px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    object-fit: cover;
+}
+
+.btn-edit {
+    display: block;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    width: 10rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-delete {
+    display: block;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    width: 10rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* DetailProject */
+
+.my-project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.my-project-detail-container {
+    width: 900px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.my-project-detail-container .detcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.my-project-detail-container .detcon .left {
+    width: 50rem;
+    margin-right: 1rem;
+}
+
+.my-project-detail-container .detcon .left img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.detcon .right img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.detcon .right .text1 {
+    margin-top: 1rem;
+}
+
+.detcon .right .text2 .log {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.detcon .right .text2 .log2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.my-project-detail-container h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-project-detail-container h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
+}
+
+.paragraf {
+    margin-top: 2rem;
+    text-align: justify;
 }
 
 /* ========= Typography ========= */
@@ -252,8 +510,23 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.heading-3 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.heading-4 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .heading-1,
-.heading-2 {
+.heading-2,
+.heading-3 {
     font-weight: 600;
 }
 
