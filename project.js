@@ -1,7 +1,7 @@
 let projects = [];
 
 function addProject() {
-    let title = document.getElementById("input-prject-name").value;
+    let title = document.getElementById("input-project-name").value;
     let content = document.getElementById("input-description").value;
 
     let startdate = document.getElementById("input-start-date").value;
