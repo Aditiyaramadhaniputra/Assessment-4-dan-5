@@ -152,7 +152,7 @@ function getProjectDetail() {
 
 window.onload = () => {
     let data = getProjectDetail(); // get project detail
-    let projectsDetailContainer = document.getElementById("detail-project"); // get projects detail container
+    let projectsDetailContainer = document.getElementById("detailproject"); // get projects detail container
     projectsDetailContainer.innerHTML += `
   <h1 class="header">${data.title}</h1>
       <div class="project">
